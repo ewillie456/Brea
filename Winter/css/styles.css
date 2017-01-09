@@ -68,6 +68,9 @@ body{
 	border: 1px solid black;
 	border-radius: 5px;
 }
+p{
+	text-align: left;
+}
 .about{
 }
 .navbar .navbar-nav {
