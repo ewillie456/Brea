@@ -1,0 +1,103 @@
+{
+    "colored_drawings":[{
+       "title": "Snack Pop Art Still Life",
+       "creationDate": "none",
+       "medium": "Sketch pencils to draw it out, and Crayola color pencils to color them in.",
+       "desc": "none",
+       "imgName": "snack_pop_art_still_life.jpg",
+       "imgW": 656,
+       "imgH": 508
+    }],
+    "creations":"none",
+    "graffiti":[{
+       "title": "Love Spewed",
+       "creationDate": "02/27/2014",
+       "medium":"Pencil; Black, Gold, and Sliver Sharpie.",
+       "desc": "none",
+       "imgName": "love_spewed.jpg",
+       "imgW": 478,
+       "imgH": 478
+    }],
+    "paintings":"none",
+    "pastel":[{
+       "title": "Weaving Skull",
+       "creationDate": "01/05/2015",
+       "medium": "Oil Pastels.",
+       "desc": "none",
+       "imgName": "weaving_skull.jpg",
+       "imgW": 459,
+       "imgH": 816
+    },
+    {
+       "title": "Rain Drop",
+       "creationDate": "06/18/2015",
+       "medium": "Oil Pastels.",
+       "desc": "none",
+       "imgName": "rain_drop.jpg",
+       "imgW": 893,
+       "imgH": 878
+    }],
+    "portraits":[{
+       "title": "Self Portrait",
+       "creationDate": "12/13/2014",
+       "medium": "2B,4B,6B,8B and 4H sketch pencils. As well as Medium, and Soft charcoal, and a Tortillion for blending and shading.",
+       "desc": "none",
+       "imgName": "self_portrait.jpg",
+       "imgW": 960,
+       "imgH": 540
+    },
+    {
+       "title": "Martin Luther King Jr",
+       "creationDate": "12/13/2014",
+       "medium": "Sketch pencils, and Black Sharpie.",
+       "desc": "none",
+       "imgName": "martin_luther_king_jr.jpg",
+       "imgW": 614,
+       "imgH": 720
+    },
+    {
+       "title": "Mahatma Ghandi",
+       "creationDate": "02/26/2016",
+       "medium": "Sketch pencils, and Black Sharpie.",
+       "desc": "none",
+       "imgName": "mahatma_ghandi.jpg",
+       "imgW": 720,
+       "imgH": 1069
+    },
+    {
+       "title": "Steve Harvey",
+       "creationDate": "02/26/2016",
+       "medium": "Sketch pencils, and Black Sharpie.",
+       "desc": "none",
+       "imgName": "steve_harvey.jpg",
+       "imgW": 720,
+       "imgH": 1099
+    },
+    {
+       "title": "Lauryn Hill",
+       "creationDate": "02/25/2015",
+       "medium": "Sketch Pencils, Charcoal, and a Tortillion to use for shading.",
+       "desc": "none",
+       "imgName": "lauryn_hill.jpg",
+       "imgW": 720,
+       "imgH": 851
+    }],
+    "sketches":[{
+       "title": "Lonely Soccer Ball",
+       "creationDate": "05/16/14",
+       "medium": "Sketch Pencils.",
+       "desc": "none",
+       "imgName": "lonely_soccer_ball.jpg",
+       "imgW": 960,
+       "imgH": 668
+    },
+    {
+       "title": "Owl Eye",
+       "creationDate": "none",
+       "medium": "Sketch pencils.",
+       "desc": "none",
+       "imgName": "owl_eye.jpg",
+       "imgW": 960,
+       "imgH": 661
+    }]
+}

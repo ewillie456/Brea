@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Winter Bornartist - Artwork</title>
+	<meta name="author" content="Edward T Willie III">
+	<!--CSS-->
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--Javascript libraries-->
+	<script type='text/javascript' src="../jQuery/jquery-3.1.1.min.js"></script>
+	<script type='text/javascript' src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<!--Javascript-->
+	<script src="js/script.js"></script>
+	<script type='text/javascript'>
+		function init(){
+			readTextFile("data/artwork.json", function(text){
+				var json = JSON.parse(text);
+				loadSection('colored', 'colored_drawings',json.colored_drawings);
+				loadSection('creations', 'creations',json.creations);
+				loadSection('graffiti', 'graffiti',json.graffiti);
+				loadSection('paintings', 'paintings',json.paintings);
+				loadSection('pastel', 'pastel',json.pastel);
+				loadSection('portraits', 'portraits',json.portraits);
+				loadSection('sketches', 'sketches',json.sketches);
+			});
+		}
+	</script>
+</head>
+
+<body onload='init()'>
+	<script type='text/javascript'>
+		createNav('artwork');
+	</script>
+	<div class="panel panel-default">
+		<div class="panel-heading" id="colored_head" onclick="makeVis('colored')">
+			<h1 class="panel-title">Colored Drawings</h1>
+		</div>
+		<div class="panel-body" id="colored" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="creations_head" onclick="makeVis('creations')">
+			<h1 class="panel-title">Creations</h1>
+		</div>
+		<div class="panel-body" id="creations" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="graffiti_head" onclick="makeVis('graffiti')">
+			<h1 class="panel-title">Graffiti</h1>
+		</div>
+		<div class="panel-body" id="graffiti" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="paintings_head" onclick="makeVis('paintings')">
+			<h1 class="panel-title">Paintings</h1>
+		</div>
+		<div class="panel-body" id="paintings" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="pastel_head" onclick="makeVis('pastel')">
+			<h1 class="panel-title">Pastel</h1>
+		</div>
+		<div class="panel-body" id="pastel" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="portraits_head" onclick="makeVis('portraits')">
+			<h1 class="panel-title">People/ Portraits</h1>
+		</div>
+		<div class="panel-body" id="portraits" style='display:none'>
+			Waiting for additions
+		</div>
+		<div class="panel-heading" id="sketches_head" onclick="makeVis('sketches')">
+			<h1 class="panel-title">Sketches</h1>
+		</div>
+		<div class="panel-body" id="sketches" style='display:none'>
+			Waiting for additions
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@media (max-width: 991px) {
+	.navbar-header {
+	    float: none;
+	}
+	.navbar-toggle {
+	    display: block;
+	    text-align: center;
+	    width: 6em;
+	    font-size: 2em;
+	}
+	.icon-bar{
+	    text-align: center;
+	    width: 70%;
+	}
+	.navbar-collapse {
+	    border-top: 1px solid transparent;
+	    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+	    display: none!important;
+	}
+	.navbar-nav {
+	    float: none!important;
+	    margin: 7.5px -15px;
+	    width: 100%;
+	}
+	.navbar-nav>li {
+	    float: none;
+	    width: 100%;
+	}
+	.navbar-nav>li>a {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    width: 100%;
+	    font-size: 4em;
+	}
+	.navbar-text {
+	    float: none;
+	    margin: 15px 0;
+	}
+	/* since 3.1.0 */
+	.navbar-collapse.collapse.in { 
+	    display: block!important;
+	}
+	.collapsing {
+	    overflow: hidden!important;
+	}
+	h1.panel-title {
+	    font-size: 48px;
+	}
+	h2.panel-title {
+	    font-size: 36px;
+	}
+	h3.panel-title {
+	    font-size: 30px;
+	}
+	h4.panel-title {
+	    font-size: 24px
+	}
+	h5.panel-title {
+	    font-size: 18px
+	}
+	h6.panel-title {
+	    font-size: 14px;
+	} 
+}
+body{
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.about{
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.active{
+	background-color:#d9d9d9;
+}
+.navbar-toggle{
+	background-color:#d9d9d9;
+}
+.icon-bar{
+	background-color:white;
+}
+.panel-body{
+	text-align: center;	
+}
+.panel-heading{
+	text-align: center;	
+}
+h1.panel-title {
+    font-size: 36px;
+}
+h2.panel-title {
+    font-size: 30px;
+}
+h3.panel-title {
+    font-size: 24px;
+}
+h4.panel-title {
+    font-size: 18px
+}
+h5.panel-title {
+    font-size: 14px
+}
+h6.panel-title {
+    font-size: 10px;
+} 
