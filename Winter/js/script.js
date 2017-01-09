@@ -61,6 +61,16 @@ function makeInvis(id){
 	document.getElementById(id).style.display = "none";
 	document.getElementById(id+"_head").onclick=function(){makeVis(id);};
 }
+function addLogModal(){
+	var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+	xhr.open('get', 'login.html', true);
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) { 
+			document.getElementById('inner').innerHTML = xhr.responseText;
+		} 
+	}
+	xhr.send();
+}
 function createNav(pageName){
 	var nav = document.createElement('div');
 	nav.className="navbar navbar-primary";
@@ -71,9 +81,12 @@ function createNav(pageName){
 	var navHeader = document.createElement('div'); 
 	navHeader.className = "navbar-header";
 	
-	var logo = document.createElement('a');
-	logo.className = "navbar-brand";
-	logo.href = "#";
+	var logo = document.createElement('button');
+	logo.setAttribute('type','button');
+	logo.setAttribute('data-toggle','modal');
+	logo.setAttribute('data-target','#modal');
+	//data-toggle="modal" data-target="#myModal">
+	logo.className = "navbar-brand btn btn-primary btn-lg";
 	logo.appendChild(document.createTextNode("Winter Bornartist"));
 	
 	navHeader.appendChild(createNavButton());
@@ -115,15 +128,15 @@ function createNavButton(){
 	/*navButton.appendChild(iconBar1);
 	navButton.appendChild(iconBar2);
 	navButton.appendChild(iconBar3);*/
-	navButton.appendChild(document.createTextNode("Show"));
+	navButton.appendChild(document.createTextNode("Menu"));
 	navButton.onclick = function(){
-		btnText("Show",navButton.id)
+		btnText("Menu",navButton.id)
 	}
 	
 	return navButton;
 }
 function btnText(currText,id) {
-	if (currText=="Show") {
+	if (currText=="Menu") {
 		clearNodes(id);
 		document.getElementById(id).appendChild(document.createTextNode("Hide"));
 		document.getElementById(id).onclick = function(){
@@ -132,9 +145,9 @@ function btnText(currText,id) {
 	}
 	else if (currText=="Hide") {
 		clearNodes(id);
-		document.getElementById(id).appendChild(document.createTextNode("Show"));
+		document.getElementById(id).appendChild(document.createTextNode("Menu"));
 		document.getElementById(id).onclick = function(){
-			btnText("Show",id)
+			btnText("Menu",id)
 		}
 	}
 }
