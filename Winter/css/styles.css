@@ -77,18 +77,14 @@ p{
     display: inline-block;
     float: none;
 }
-
+#navBtn{
+	float: right;
+}
 .navbar .navbar-collapse {
     text-align: center;
 }
 .active{
 	background-color:#d9d9d9;
-}
-.navbar-toggle{
-	background-color:#d9d9d9;
-}
-.icon-bar{
-	background-color:white;
 }
 .panel-body{
 	text-align: center;	

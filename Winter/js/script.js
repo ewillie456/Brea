@@ -106,7 +106,7 @@ function createNav(pageName){
 }
 function createNavButton(){
 	var navButton = document.createElement('button'); 
-	navButton.className = "navbar-toggle collapsed"
+	navButton.className = "btn btn-primary btn-lg"
 	navButton.id = "navBtn"
 	navButton.setAttribute('type','button');
 	navButton.setAttribute('data-toggle','collapse');
@@ -128,15 +128,15 @@ function createNavButton(){
 	/*navButton.appendChild(iconBar1);
 	navButton.appendChild(iconBar2);
 	navButton.appendChild(iconBar3);*/
-	navButton.appendChild(document.createTextNode("Menu"));
+	navButton.appendChild(document.createTextNode("Navigation"));
 	navButton.onclick = function(){
-		btnText("Menu",navButton.id)
+		btnText("Navigation",navButton.id)
 	}
 	
 	return navButton;
 }
 function btnText(currText,id) {
-	if (currText=="Menu") {
+	if (currText=="Navigation") {
 		clearNodes(id);
 		document.getElementById(id).appendChild(document.createTextNode("Hide"));
 		document.getElementById(id).onclick = function(){
@@ -145,9 +145,9 @@ function btnText(currText,id) {
 	}
 	else if (currText=="Hide") {
 		clearNodes(id);
-		document.getElementById(id).appendChild(document.createTextNode("Menu"));
+		document.getElementById(id).appendChild(document.createTextNode("Navigation"));
 		document.getElementById(id).onclick = function(){
-			btnText("Menu",id)
+			btnText("Navigation",id)
 		}
 	}
 }
