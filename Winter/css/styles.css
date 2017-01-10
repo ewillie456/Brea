@@ -78,7 +78,10 @@ p{
     float: none;
 }
 #navBtn{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 	float: right;
+	background-color: #428bca;
 }
 .navbar .navbar-collapse {
     text-align: center;

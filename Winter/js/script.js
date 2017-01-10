@@ -106,7 +106,7 @@ function createNav(pageName){
 }
 function createNavButton(){
 	var navButton = document.createElement('button'); 
-	navButton.className = "btn btn-primary btn-lg"
+	navButton.className = "navbar-toggle collapsed btn btn-primary btn-lg"
 	navButton.id = "navBtn"
 	navButton.setAttribute('type','button');
 	navButton.setAttribute('data-toggle','collapse');
