@@ -87,6 +87,7 @@ function createNav(pageName){
 	logo.setAttribute('data-target','#modal');
 	//data-toggle="modal" data-target="#myModal">
 	logo.className = "navbar-brand btn btn-primary btn-lg";
+	logo.id = "logo";
 	logo.appendChild(document.createTextNode("Winter Bornartist"));
 	
 	navHeader.appendChild(createNavButton());
@@ -154,6 +155,7 @@ function btnText(currText,id) {
 function createNavList(pageName){
 	var navList = document.createElement('ul');
 	navList.className = "nav navbar-nav";
+	navList.id='navList';
 	
 	var liHome = document.createElement('li');
 	var aHome = document.createElement('a');
