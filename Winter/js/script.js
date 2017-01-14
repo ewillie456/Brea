@@ -63,7 +63,7 @@ function makeInvis(id){
 }
 function addLogModal(){
 	var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-	xhr.open('get', 'login.html', true);
+	xhr.open('get', 'login_modal.html', true);
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4 && xhr.status == 200) { 
 			document.getElementById('inner').innerHTML = xhr.responseText;
