@@ -1,5 +1,7 @@
 <?php
-
+	if($POST['321988774101']!=true;){
+		header("Location: index.html");
+	}
 ?>
 <!doctype html>
 <html lang="en">
